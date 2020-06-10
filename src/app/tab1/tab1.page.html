@@ -1,0 +1,291 @@
+<style>
+  :root {
+    --ion-safe-area-top: 20px;
+    --ion-safe-area-bottom: 22px;
+  }
+
+  .font {
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.10em;
+    text-transform: none;
+  }
+
+  section {
+    margin-top: 1em;
+    margin-bottom: 2.5em;
+    
+  }
+
+  /* ion-slide.swiper-slide{
+        left: 25%;
+    }
+    .thumb-image{
+        padding: 10%;
+    } */
+
+.cardview{
+  height: 140px;
+  width: 100%;
+  border-radius: 20px;
+  background-image: url("https://fammi.ly/uploads/contents/images/88c60814d2aebde47ac7260fb0dbf0f1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cardview2{
+  height: 140px;
+  width: 45%;
+  border-radius: 20px;
+  background-image: url("https://fammi.ly/uploads/courses/covers/934a0e271f06bcf7944a464bb53eef50.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cardview3{
+  border-radius: 20px;
+}
+
+
+  .login{
+    background-color:darkblue;
+  }
+
+  .text-login{
+    color: white;
+  }
+  .button-lihat{
+    font-weight: 500;
+    color: #fff;
+    margin: 0;
+    background: darkblue;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    padding: 12px 14px;
+}
+
+
+ .title{
+    font-size: 18px;
+    font-weight: 700;
+    white-space: nowrap;
+    color: black;
+} 
+  .more{
+    font-size: 14px;
+    font-weight: 500;
+    text-align: end;
+    color: darkblue;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+  .margin {
+    margin-right: 10px;
+  }
+
+  section:not(.full-width),
+  .full-width > header {
+    padding: 0 10px;
+  }
+ 
+
+
+</style>
+
+<ion-header [translucent]="true" style="background-color: white;">
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button>
+        <ion-icon name="sync-outline" color="black" style="color: black;"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon name="cart-outline" color="black"></ion-icon>
+      </ion-button>
+      <ion-chip class="login">
+        <ion-icon name="person-outline" style="color: white;"></ion-icon>
+        <ion-label class="text-login">Log In</ion-label>
+      </ion-chip>
+    </ion-buttons>
+    <ion-buttons>
+      <ion-text style="padding: 10px; color: black; ">
+        <h2>Beranda</h2>
+      </ion-text>
+    </ion-buttons>
+    
+  </ion-toolbar>
+  <ion-toolbar>
+      <ion-button size="medium" expand="block" color="light" style="margin: 20px;">
+        <ion-icon name="search-outline" class="margin"></ion-icon>
+       <span class="font">
+        Apa yang ingin kamu pelajari hari ini?
+       </span> </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <!-- <ion-badge color="danger">0</ion-badge> -->
+    <ion-fab-button color="danger">
+      <ion-icon name="chatbubble-outline" ></ion-icon>
+      <!-- <ion-label>Tanya</ion-label> -->
+    </ion-fab-button>
+    <ion-fab-list side="top">
+      <ion-fab-button>
+        <ion-icon name="briefcase-outline"></ion-icon>
+      </ion-fab-button>
+      <!-- <ion-label>lavel 2</ion-label> -->
+      <ion-fab-button>
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+      </ion-fab-button>
+      <!-- <ion-label>lavel 3</ion-label> -->
+      <ion-fab-button>
+        <ion-icon name="help-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab-list>
+  </ion-fab>
+
+
+  <ion-slides style="padding-right: 18px; padding-left: 18px;">
+    <ion-slide>
+      <ion-card class="cardview"></ion-card> 
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardview"></ion-card> 
+    </ion-slide>
+    <ion-slide>
+      <ion-card class="cardview"></ion-card> 
+    </ion-slide>
+   </ion-slides>
+
+  
+   <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-text class="title">
+          Konsultasi
+        </ion-text>
+      </ion-col>
+      <ion-col class="more">
+          Lihat Semua
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  
+   
+    <ion-slides>
+      <ion-slide >
+        <ion-card class="cardview2"></ion-card>
+        <ion-card class="cardview2"></ion-card>
+      </ion-slide>
+      <ion-slide >
+        <ion-card class="cardview2"></ion-card>
+        <ion-card class="cardview2"></ion-card>
+      </ion-slide>
+      <ion-slide>
+        <ion-card class="cardview2"></ion-card>
+        <ion-card class="cardview2"></ion-card>
+      </ion-slide>
+     </ion-slides>
+     
+  
+    <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-text class="title">
+          Kelas
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    </ion-grid>
+  <ion-card class="cardview3">
+    <img src="https://fammi.ly/uploads/products/images/a07d9dba2c16c228f0a88e68e2d59144.jpg" />
+    <ion-card-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-card-subtitle  style="color:black">Kelas di mulai</ion-card-subtitle>
+              <ion-text style="color:black">
+                30 Juni 2020
+              </ion-text>
+            </div>
+          </ion-col>
+          <ion-col></ion-col>
+          <ion-col >
+            <div>
+              <ion-item>
+                <button  ion-button item-end size="large"  class="button-lihat">
+                  <span >Lihat</span>
+              </button>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-card class="cardview3">
+    <img src="https://fammi.ly/uploads/products/images/a07d9dba2c16c228f0a88e68e2d59144.jpg" />
+    <ion-card-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-card-subtitle  style="color:black">Kelas di mulai</ion-card-subtitle>
+              <ion-text style="color:black">
+                30 Juni 2020
+              </ion-text>
+            </div>
+          </ion-col>
+          <ion-col></ion-col>
+          <ion-col>
+            <div>
+              <ion-item>
+                <button  ion-button item-end size="large"  class="button-lihat">
+                  <span >Lihat</span>
+              </button>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+  </ion-card>
+  
+  <ion-card class="cardview3">
+    <img src="https://fammi.ly/uploads/products/images/a07d9dba2c16c228f0a88e68e2d59144.jpg" />
+    <ion-card-header>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <div>
+              <ion-card-subtitle  style="color:black">Kelas di mulai</ion-card-subtitle>
+              <ion-text style="color:black">
+                30 Juni 2020
+              </ion-text>
+            </div>
+          </ion-col>
+          <ion-col></ion-col>
+          <ion-col>
+            <div>
+              <ion-item>
+                <button  ion-button item-end size="large"  class="button-lihat">
+                  <span >Lihat</span>
+              </button>
+              </ion-item>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-header>
+  </ion-card>
+
+</ion-content>
+
+
